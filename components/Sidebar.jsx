@@ -1,6 +1,21 @@
 import React from "react";
 import { Component } from "react";
 import styled from "styled-components";
+
+class Sidebar extends Component {
+  render() {
+    return (
+      <SideNav>
+        <SideNavA href="#">Test</SideNavA>
+        <SideNavA href="#">Test</SideNavA>
+        <SideNavA href="#">Test</SideNavA>
+        <SideNavA href="#">Test</SideNavA>
+        <SideNavA href="#">Test</SideNavA>
+      </SideNav>
+    );
+  }
+}
+
 const SideNav = styled.div`
 display: flex;
 align-items: center;
@@ -12,6 +27,7 @@ flex-direction: column;
   top: 0;
   left: 0;
   padding: 0.75rem 0 !important;
+  margin-right: 0.1vw;
   overflow-y: auto;
   white-space: nowrap;
   overflow-x: hidden;
@@ -26,17 +42,5 @@ const SideNavA = styled.a`
   color: #818181;
   display: block;
 `;
-class Sidebar extends Component {
-    render() {
-        return (
-            <SideNav>
-                <SideNavA href="#">Test</SideNavA>
-                <SideNavA href="#">Test</SideNavA>
-                <SideNavA href="#">Test</SideNavA>
-                <SideNavA href="#">Test</SideNavA>
-                <SideNavA href="#">Test</SideNavA>
-            </SideNav>
-        );
-    }
-}
+
 export default Sidebar;
