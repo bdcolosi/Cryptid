@@ -18,7 +18,7 @@ const ChatBox = () => (
 );
 
 const Layout = styled.section`
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background: #7f7fd5;
   background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);

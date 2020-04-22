@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SideNav = styled.div`
 display: flex;
 align-items: center;
-  height: 90vw;
+  height: 90%;
   width: 20%;
 position: relative;
 flex-direction: column;
