@@ -2,9 +2,12 @@ import React from "react";
 import { Component } from "react";
 import styled from "styled-components";
 const SideNav = styled.div`
+display: flex;
+align-items: center;
   height: 100%;
   width: 15%;
-  position: fixed;
+position: relative;
+flex-direction: column;
   z-index: 1;
   top: 0;
   left: 0;
@@ -24,16 +27,16 @@ const SideNavA = styled.a`
   display: block;
 `;
 class Sidebar extends Component {
-  render() {
-    return (
-      <SideNav>
-        <SideNavA href="#">Test</SideNavA>
-        <SideNavA href="#">Test</SideNavA>
-        <SideNavA href="#">Test</SideNavA>
-        <SideNavA href="#">Test</SideNavA>
-        <SideNavA href="#">Test</SideNavA>
-      </SideNav>
-    );
-  }
+    render() {
+        return (
+            <SideNav>
+                <SideNavA href="#">Test</SideNavA>
+                <SideNavA href="#">Test</SideNavA>
+                <SideNavA href="#">Test</SideNavA>
+                <SideNavA href="#">Test</SideNavA>
+                <SideNavA href="#">Test</SideNavA>
+            </SideNav>
+        );
+    }
 }
 export default Sidebar;
