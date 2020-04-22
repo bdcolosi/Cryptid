@@ -25,18 +25,19 @@ const Layout = styled.section`
   background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
   border-radius: 15px !important;
   background-color: rgba(0, 0, 0, 0.4) !important;
+  display: flex;
 `;
 
 const Wrapper = styled.section`
   margin-top: auto;
   margin-bottom: auto;
-  padding: 0.75rem 0 !important;
+  /* padding: 0.75rem 0 !important; */
   overflow-y: auto;
   white-space: nowrap;
   border-radius: 15px 15px 0 0 !important;
   border-bottom: 0 !important;
-margin-left: 10rem;
-margin-right: 10rem;
+  width: 80%;
+
 `;
 
 const InnerBox = styled.section`
@@ -48,7 +49,7 @@ align-self: flex-end;
 const InnerBoxWrapper = styled.section`
 poistion: float;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   background: black;
   opacity: 0.5;
 
