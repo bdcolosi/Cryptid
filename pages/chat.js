@@ -40,15 +40,9 @@ margin-right: 10rem;
 `;
 
 const InnerBox = styled.section`
-<<<<<<< HEAD
-  text-align: center;
-  width: 100%;
-  align-self: flex-end;
-=======
 text-align: center;
 width: 100%;
 align-self: flex-end;
->>>>>>> 7c9857c5fe732c8dd9c3d53e8b536ecf2cb7d085
 `;
 
 const InnerBoxWrapper = styled.section`
