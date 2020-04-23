@@ -1,10 +1,10 @@
 CREATE DATABASE userinformation 
 
 CREATE TABLE users (
-  uid SERIAL PRIMARY KEY,
+  id serial PRIMARY KEY,
   username VARCHAR(255) UNIQUE,
   password VARCHAR(50),
   email VARCHAR(255),
-  email_verified BOOLEAN,
+  email_verified BOOLEAN
 );
 

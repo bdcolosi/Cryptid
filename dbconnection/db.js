@@ -1,10 +1,10 @@
 const pgp = require('pg-promise')();
 
 const host = localhost;
-const port = 3001;
+const port = 3000;
 const database = userinformation;
 
-const db = pgp(`postfres://@${host}:${port}/${database}`);
+const db = pgp(`postgres://@${host}:${port}/${database}`);
 
-export default db
+export default db;
 
