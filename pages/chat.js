@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
+import Index from "./index";
 
 const ChatBox = () => (
   <Layout>
     <Sidebar />
     <Wrapper>
-
       <InnerBoxWrapper>
         <InnerBox>
-          <input type="text"></input>
+          <Index />
         </InnerBox>
       </InnerBoxWrapper>
       <h1>test</h1>
@@ -37,23 +37,22 @@ const Wrapper = styled.section`
   border-radius: 15px 15px 0 0 !important;
   border-bottom: 0 !important;
   width: 100%;
-margin-left: 1vw;
-margin-right: 15vw;
+  margin-left: 1vw;
+  margin-right: 15vw;
 `;
 
 const InnerBox = styled.section`
-text-align: center;
-width: 100%;
-align-self: flex-end;
+  text-align: center;
+  width: 100%;
+  align-self: flex-end;
 `;
 
 const InnerBoxWrapper = styled.section`
-poistion: float;
+  poistion: float;
   display: flex;
   height: 90vh;
   background: black;
   opacity: 0.5;
-
 `;
 
 const MessageBox = styled.input``;
