@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
-import Index from "./index";
+import MessageHandling from "../components/MessageInput";
 
 const ChatBox = () => (
   <Layout>
@@ -9,7 +9,7 @@ const ChatBox = () => (
     <Wrapper>
       <InnerBoxWrapper>
         <InnerBox>
-          <Index />
+          <MessageHandling />
         </InnerBox>
       </InnerBoxWrapper>
       <h1>test</h1>
