@@ -5,7 +5,7 @@ import axios from 'axios';
 const TestApi = (props) => {
     const [testApi, setTestApi] = React.useState('');
 
-    axios.get('http://localhost:3001/users')
+    axios.get('http://localhost:3001/api/login')
         .then(response => response.data)
         .then(response => setTestApi(response))
 
