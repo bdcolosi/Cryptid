@@ -5,7 +5,7 @@ import fetch from "isomorphic-unfetch";
 export default class MessageHandling extends Component {
   //fetch message from the server
   static async getInitialProps({ req }) {
-    const response = await fetch("https://next-socket-io.now.sh/messages");
+    const response = await fetch("https://next-szocket-io.now.sh/messages");
     const messages = await response.json();
     return { messages };
   }
@@ -22,11 +22,6 @@ export default class MessageHandling extends Component {
   componentDidMount() {
     this.socket = io("https://next-socket-io.now.sh/");
     this.socket.on("message", this.handleMessage);
-  }
-
-  componentWillUnmount() {
-    this.socket.off("message", this.handleMessage);
-    this.socket.close();
   }
 
   handleChange = (event) => {

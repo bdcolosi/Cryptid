@@ -1,4 +1,4 @@
-const db = require('../dbconnection/db');
+
 
 export default async (req, res) => {
     try {
